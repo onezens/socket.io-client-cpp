@@ -191,7 +191,7 @@ buildBoostForIPhoneOS()
     ./bjam -j16 --build-dir=iphonesim-build --stagedir=iphonesim-build/stage --toolset=darwin-${IPHONE_SDKVERSION}~iphonesim architecture=x86 target-os=iphone macosx-version=iphonesim-${IPHONE_SDKVERSION} link=static stage
     doneSection
 
-  #  ./b2 -j16 --build-dir=osx-build --stagedir=osx-build/stage toolset=clang cxxflags="-std=c++11 -stdlib=libc++ -arch i386 -arch x86_64" linkflags="-stdlib=libc++" link=static threading=multi stage
+    ./b2 -j16 --build-dir=osx-build --stagedir=osx-build/stage toolset=clang cxxflags="-std=c++11 -stdlib=libc++ -arch i386 -arch x86_64" linkflags="-stdlib=libc++" link=static threading=multi stage
     doneSection
 }
 
@@ -363,7 +363,7 @@ echo
 
 downloadBoost
 unpackBoost
-inventMissingHeaders
+#inventMissingHeaders
 bootstrapBoost
 updateBoost
 buildBoostForIPhoneOS
@@ -375,4 +375,3 @@ restoreBoost
 
 echo "Completed successfully"
 
-#===============================================================================

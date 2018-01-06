@@ -1,2 +1,8 @@
 build/
 **/*.user
+
+examples/iOS/SioChatDemo/boost/ios/
+examples/iOS/SioChatDemo/boost/boost_1_55_0.tar.bz2
+examples/iOS/SioChatDemo/boost/osx/
+examples/iOS/SioChatDemo/boost/src/
+examples/iOS/SioChatDemo/tags
